@@ -1,0 +1,524 @@
+:root{
+    --team-pink: #FCC3C3;
+    --team-yellow: #E4E483;
+}
+
+
+body {
+    @font-face {
+        font-family: 'Inter';
+        src: url('https://fonts.googleapis.com/css?family=Inter');
+    }
+}
+
+/* Smartphone - Landscape and Portrait*/
+@media only screen and (min-width: 390px) and (max-width: 480px) {
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: white;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(224, 198, 221);
+        height: 80px;
+        justify-content: space-evenly;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .icons{
+        width:30px;
+        height: 30px;
+        padding-top: 130%;
+    }
+
+    /*Containers*/
+
+    .main-container{
+        display: flex;
+        flex-direction: row;
+        background-color: #FFFFFF;
+        padding-top: 30px;
+        flex-wrap: wrap;
+        padding-left: 1%;
+        padding-right: 1%;
+        align-items: center;
+    }
+
+    .teams-container{
+        display: flex;
+        width: 360px;
+        height: 50px;
+        border-radius: 35px;
+        background-color: #AA8FFB;
+        align-items: center;
+    }
+
+    /*Color - Teams*/
+
+    .team-pink{
+        background-color: var(--team-pink);
+    }
+
+    .team-yellow{
+        background-color: var(--team-yellow);
+    }
+
+    
+
+    .tasks-container{
+        display: flex;
+        width: 360px;
+        height: 80px;
+        border-radius: 30px;
+        background-color: #FCC3C3;
+        align-items: center;
+
+    }
+
+    .stats-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-left: 22px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .st-1{
+        width: 170px;
+        height: 170px;
+        border-radius: 20px;
+        background-color: #D9D9D9;
+
+    }
+    
+    .st-2{
+        width: 170px;
+        height: 170px;
+        border-radius: 20px;
+        background-color: #D9D9D9;
+        
+    }
+
+    .add-w{
+        display: flex;
+        width: 360px;
+        height: 40px;
+        border-radius: 20px;
+        border-style: dashed;
+        border-color: #D9D9D9;
+    }
+
+    .calendar{
+        display: flex;
+        background-color: pink;
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+        flex-direction: column;
+        gap: 10px;
+        align-items: left;
+    }
+
+    .cal-item{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5%;
+        padding-left: 10%;
+    }
+
+    .cal-text{
+        font-size: 14px;
+        font-weight: normal;
+        padding-left: 3%;
+    }
+
+    .stat-text{
+        font-size: 22px;
+        font-weight: bold;
+        text-align: left;
+        padding-left: 10%;
+
+    }
+
+  
+    /* Text Styles*/
+
+
+    .day{
+        padding-top: 30px;
+        font-weight: bold;
+        font-size: 20px;
+        padding-bottom: 10%;
+        color:black;
+    }
+
+    .task{
+        padding-top: 10%;
+        font-weight: bold;
+        font-size: 16px;
+        color:black;
+    }
+
+    .bottom-text{
+        font-weight: normal;
+        font-size: 14px;
+        color:gray;
+        opacity: 70%;
+    }
+
+    .top-text{
+        font-size:12px;
+        font-weight: bold;
+        color:gray;
+    }
+
+    .add-w-text{
+        font-size: 16px;
+        font-weight: bold;
+        color: #D9D9D9;
+        align-content: center;
+        padding-left:130px;
+    }
+
+    .nav-text{
+        font-size:30px;
+        color:black;
+        white-space: nowrap;
+        align-content: center;
+        font-weight: bold;
+        padding-left: 7%;
+        padding-top: 5%;
+        line-height: 0.001;
+    }
+
+    .head-text{
+        font-size: 25px;
+        color: black;
+        font-weight: bold;
+        padding-top: 5%;
+        padding-bottom: 10px;
+        padding-left:3%;
+        padding-top: 10%;
+    }
+
+
+    .text-v1{
+        font: 15px;
+        font-weight: bold;
+        color: white;
+        text-align: left;
+        padding-top:1px;
+        padding-left: 20px;
+        padding-bottom: 5px;
+    }
+
+    .date-text{
+        font-size: 15px;
+        font-weight:normal;
+        font-style: italic;
+    }
+
+
+    
+
+}
+
+/* Tablet and Laptop  */
+
+@media screen and (min-width: 480px) and (max-width: 1980px) {
+
+    body {
+        font-family: 'Inter', sans-serif;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:5px;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .header{
+        display: flex;
+        width:10%;
+        height: 100%;
+        flex-direction: row;
+        background-color: rgb(224, 198, 221);
+        justify-content: space-evenly;
+    }
+
+    .icons{
+        width:30px;
+        height: 30px;
+        padding-top: 40%;
+    }
+
+    /*Containers*/
+
+    .top-page{
+        width: 800px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .t-cont{
+        display: flex;
+        flex-direction: row;
+        padding-left: 13%;
+        gap: 1%;
+        padding-bottom: 3%;
+        width: 500px;
+    }
+
+    .tasks-c{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        width: 50%;
+        align-items: center;
+        padding-left: 11%;
+    }
+
+    .teams-container{
+        width: 200px;
+        height: 120px;
+        border-radius: 30px;
+        background-color: #AA8FFB;
+        padding-bottom: 10px;
+    }
+
+    .center{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sub{
+        display: flex;
+        width: 800px;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    /*Color - Teams*/
+
+    .team-pink{
+        background-color: var(--team-pink);
+    }
+
+    .team-yellow{
+        background-color: var(--team-yellow);
+    }
+
+    
+
+    .tasks-container{
+        flex-direction: column;
+        display: flex;
+        width: 200px;
+        height: 90px;
+        border-radius: 30px;
+        background-color: #FCC3C3;
+    }
+
+    .stats-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .st-c{  
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* gap:10px; */
+        width: 50%;
+    }
+
+    .st-1{
+        /* width: 110%; */
+        padding: 5px;
+        /* max-width: 10vw; */
+        /* height: 110%; */
+        border-radius: 20px;
+        background-color: #D9D9D9;
+    }
+    
+    /* .st-2{
+        width: 110%;
+        height: 110%;
+        border-radius: 20px;
+        background-color: #D9D9D9;
+    } */
+
+    .add-w{
+        display: flex;
+        /* width: 110%; */
+        /* height: 110%; */
+        border-radius: 20px;
+        border-style: dashed;
+        border-color: #D9D9D9;
+    }
+
+    .cal-sec{
+        display: flex;
+        flex-direction: column;
+        width:22%;
+        justify-content: right;
+
+
+    }
+
+    .calendar{
+        display: flex;
+        background-color: pink;
+        flex-direction: column;
+        gap: 10px;
+        align-items: left;
+    }
+
+    .cal-item{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cal-text{
+        font-size: 14px;
+        font-weight: normal;
+        padding-left: 3%;
+    }
+
+    .stat-text{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        padding-left: 10%;
+
+    }
+
+    .pfp{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .icons-holder{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+  
+    /* Text Styles*/
+
+
+    .day{
+        padding-top: 30px;
+        font-weight: bold;
+        font-size: 20px;
+        padding-bottom: 10%;
+        color:black;
+    }
+
+    .task{
+        padding-top: 10%;
+        font-weight: bold;
+        font-size: 16px;
+        color:black;
+    }
+
+    .bottom-text{
+        font-weight: normal;
+        font-size: 14px;
+        color:gray;
+        opacity: 70%;
+    }
+
+    .top-text{
+        font-size:12px;
+        font-weight: bold;
+        color:gray;
+    }
+
+    .add-w-text{
+        font-size: 16px;
+        font-weight: bold;
+        color: #D9D9D9;
+        align-content: center;
+    }
+
+    .nav-text{
+        font-size:30px;
+        color:black;
+        white-space: nowrap;
+        align-content: center;
+        font-weight: bold;
+        padding-left: 20%;
+        padding-top: 2%;
+        line-height: 0.001;
+        padding-bottom: 2%;
+    }
+
+    .sidebar-dash{
+        display: flex;
+        flex-direction: column;
+        background-color: #FCC3C3;
+        width: 15%;
+        height: 100%;
+        border-color: aqua;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        align-items: center;
+        padding-top: 10%;
+        justify-content: center;
+    }
+
+    .head-text{
+        font-size: 25px;
+        color: black;
+        font-weight: bold;
+        padding-top: 1%;
+        padding-bottom: 3%;
+    }
+
+
+    .text-v1{
+        font: 15px;
+        font-weight: bold;
+        color: white;
+        text-align: left;
+        padding-top:1%;
+        padding-left: 5%;
+    }
+
+    .date-text{
+        font-size: 15px;
+        font-weight:normal;
+        font-style: italic;
+        padding-top: 1%;
+        padding-bottom: 3%;
+    }
+
+    
+} 
+
+
+
+
+
+
+
