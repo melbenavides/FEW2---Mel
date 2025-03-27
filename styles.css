@@ -232,13 +232,15 @@ body {
 @media screen and (min-width: 480px) and (max-width: 1980px) {
 
     body {
+        background-color: #DCDBD0;
         font-family: 'Inter', sans-serif;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        gap:5px;
+        flex-wrap: wrap;    
         width: 100%;
         height: 100%;
+        justify-content: center;
+        padding-top: 1%;
     }
 
 
@@ -270,17 +272,17 @@ body {
         display: flex;
         flex-direction: column;
         background-color: #FFFFFF;
-        padding-left: 10%;
+        padding-left: 8%;
         padding-right: 10%;
     }
 
     .t-cont{
         display: flex;
         flex-direction: row;
-        padding-left: 13%;
+        padding-left: 2%;
         gap: 1%;
         padding-bottom: 3%;
-        width: 500px;
+        width: 100%;
     }
 
     .tasks-c{
@@ -289,11 +291,11 @@ body {
         gap:10px;
         width: 50%;
         align-items: center;
-        padding-left: 11%;
+        padding-right: 3%;
     }
 
     .teams-container{
-        width: 200px;
+        width: 280px;
         height: 120px;
         border-radius: 30px;
         background-color: #AA8FFB;
@@ -303,6 +305,7 @@ body {
     .center{
         display: flex;
         flex-direction: column;
+        background-color: white;
     }
 
     .sub{
@@ -311,6 +314,7 @@ body {
         flex-direction: row;
         justify-content: center;
         align-content: center;
+        background-color: white;
 
     }
 
@@ -329,67 +333,75 @@ body {
     .tasks-container{
         flex-direction: column;
         display: flex;
-        width: 200px;
+        width: 220px;
         height: 90px;
         border-radius: 30px;
-        background-color: #FCC3C3;
+        background-color: #F8F8F8;
+
     }
 
     .stats-container{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        gap: 5px;
         flex-wrap: wrap;
+        align-items: left;
     }
 
     .st-c{  
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        /* gap:10px; */
         width: 50%;
+        padding-right: 5%; 
+
     }
 
     .st-1{
-        /* width: 110%; */
-        padding: 5px;
-        /* max-width: 10vw; */
-        /* height: 110%; */
+        padding-left:2%;
+        padding-right: 2%;
         border-radius: 20px;
-        background-color: #D9D9D9;
+        background-color: #F3F3F1;
+        border-color: #F1F1F1;
+        border-width: 0.5px 0.5px 0.5px 0.5px;
+        border-style: solid;
+        width: 100px;
+        height: 120px;
+
     }
-    
-    /* .st-2{
-        width: 110%;
-        height: 110%;
-        border-radius: 20px;
-        background-color: #D9D9D9;
-    } */
+
+    .sub-text{
+        font-size: 12px;
+        padding-top: 20%;
+        padding-left: 2%;
+    }
 
     .add-w{
         display: flex;
-        /* width: 110%; */
-        /* height: 110%; */
         border-radius: 20px;
         border-style: dashed;
         border-color: #D9D9D9;
+        width: 100px;   
+        height: 120px;
     }
 
     .cal-sec{
         display: flex;
         flex-direction: column;
-        width:22%;
+        width:15%;
+        height: 900px;
+        background-color: #f8f8f8;
         justify-content: right;
-
-
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
     }
 
     .calendar{
         display: flex;
-        background-color: pink;
         flex-direction: column;
-        gap: 10px;
         align-items: left;
+
     }
 
     .cal-item{
@@ -407,7 +419,7 @@ body {
         font-size: 20px;
         font-weight: bold;
         text-align: left;
-        padding-left: 10%;
+        padding-left: 5%;
 
     }
 
@@ -432,6 +444,7 @@ body {
         font-size: 20px;
         padding-bottom: 10%;
         color:black;
+        padding-left: 10%;
     }
 
     .task{
@@ -455,10 +468,11 @@ body {
     }
 
     .add-w-text{
-        font-size: 16px;
+        font-size: 15px;
         font-weight: bold;
         color: #D9D9D9;
         align-content: center;
+        padding-left: 15%;
     }
 
     .nav-text{
@@ -467,8 +481,8 @@ body {
         white-space: nowrap;
         align-content: center;
         font-weight: bold;
-        padding-left: 20%;
-        padding-top: 2%;
+        padding-left: 10%;
+        padding-top: 7%;
         line-height: 0.001;
         padding-bottom: 2%;
     }
@@ -476,14 +490,12 @@ body {
     .sidebar-dash{
         display: flex;
         flex-direction: column;
-        background-color: #FCC3C3;
+        background-color: white;
         width: 15%;
-        height: 100%;
-        border-color: aqua;
+        height: 900px;
         border-top-left-radius: 50px;
         border-bottom-left-radius: 50px;
         align-items: center;
-        padding-top: 10%;
         justify-content: center;
     }
 
@@ -493,6 +505,7 @@ body {
         font-weight: bold;
         padding-top: 1%;
         padding-bottom: 3%;
+        padding-right: 12%;
     }
 
 
@@ -502,7 +515,16 @@ body {
         color: white;
         text-align: left;
         padding-top:1%;
-        padding-left: 5%;
+        padding-left: 3%;
+    }
+
+    .text-v2{
+        font: 15px;
+        font-weight: regular;
+        color: black;
+        text-align: left;
+        padding-top:1%;
+        padding-left: 3%;
     }
 
     .date-text{
