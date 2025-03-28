@@ -19,90 +19,155 @@ body {
         background-color: white;
     }
 
-    .header{
+    .sidebar-dash{
         display: flex;
         flex-direction: row;
-        background-color: rgb(224, 198, 221);
-        height: 80px;
-        justify-content: space-evenly;
-        border-bottom-right-radius: 20px;
-        border-bottom-left-radius: 20px;
+        background-color: white;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        align-items: center;
+        justify-content: center;
     }
 
+
+
+
+    .user-holder p{
+        font-size: 15px;
+        padding-left: 20%;
+        padding-bottom: 50%;
+        text-align: center;
+    }
+
+    .pfp{
+        width: 40px;
+        height: 40px;
+    }
+
+
     .icons{
-        width:30px;
-        height: 30px;
-        padding-top: 130%;
+        width:20px;
+        height: 20px;
+        padding-top: 100%;
+        gap:10px;
+    }
+
+    .icons-text-holder{
+        display: flex;
+        flex-direction: row;
+        gap:2px;
+    }
+
+    .sub{
+        display: flex;
+        width: 400px;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        background-color: white;
+    }
+    
+    .icons-holder{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+    }
+
+    .text-holder{
+        display: flex;
+        flex-direction: row;
+        padding-left: 10%;
+        gap:5px;
+        font-weight: bold;
+    }
+
+    .top-page{
+        width: 400px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .teams-s-text{
+        padding-left: 7%;
+        font-size: 11px;
+        font-weight: bold;
+        color: white;
+
     }
 
     /*Containers*/
 
     .main-container{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         background-color: #FFFFFF;
-        padding-top: 30px;
-        flex-wrap: wrap;
-        padding-left: 1%;
-        padding-right: 1%;
-        align-items: center;
+        padding-left: 2%;
+        padding-right: 2%;
     }
 
     .teams-container{
-        display: flex;
-        width: 360px;
-        height: 50px;
-        border-radius: 35px;
-        background-color: #AA8FFB;
-        align-items: center;
+        width: 400px;
+        height: 90px;
+        border-radius: 20px;
+        background-color: #C991D0;
+        padding-bottom: 10px;
     }
+
 
     /*Color - Teams*/
 
-    .team-pink{
-        background-color: var(--team-pink);
+    .team-blue{
+        background-color: #B9D9D6;
     }
 
-    .team-yellow{
-        background-color: var(--team-yellow);
+    .team-peach{
+        background-color: #EEB48D;
     }
-
     
-
     .tasks-container{
+        flex-direction: column;
         display: flex;
-        width: 360px;
-        height: 80px;
+        width: 380px;
+        height: 90px;
         border-radius: 30px;
-        background-color: #FCC3C3;
-        align-items: center;
+        background-color: #F8F8F8;
+        padding-top: 5%;
+        line-height: 0.1;
+        padding-left: 7%;
+        flex-wrap: wrap;
 
     }
+    
+    .tasks-c{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1%;
+        gap:10px;
+        align-items: normal;
+        padding-left: 10%;
+    }
+
 
     .stats-container{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: flex-start;
-        padding-left: 22px;
-        gap: 20px;
+        padding-left: 2%;
+        gap: 30px;
         flex-wrap: wrap;
     }
 
     .st-1{
-        width: 170px;
-        height: 170px;
+        width: 380px;
+        height: 90px;
         border-radius: 20px;
         background-color: #D9D9D9;
 
     }
     
-    .st-2{
-        width: 170px;
-        height: 170px;
-        border-radius: 20px;
-        background-color: #D9D9D9;
-        
-    }
+
 
     .add-w{
         display: flex;
@@ -113,13 +178,27 @@ body {
         border-color: #D9D9D9;
     }
 
+    .add-w-text{
+        font-size: 16px;
+        font-weight: bold;
+        color: #D9D9D9;
+        align-content: center;
+    }
+
+
+    .cal-sec{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        background-color: #f8f8f8;
+        justify-content: right;
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+
     .calendar{
         display: flex;
-        background-color: pink;
-        border-top-left-radius: 60px;
-        border-top-right-radius: 60px;
         flex-direction: column;
-        gap: 10px;
         align-items: left;
     }
 
@@ -190,37 +269,116 @@ body {
         white-space: nowrap;
         align-content: center;
         font-weight: bold;
-        padding-left: 7%;
+        padding-left: 13%;
         padding-top: 5%;
         line-height: 0.001;
+        padding-bottom: 2%;
     }
 
     .head-text{
-        font-size: 25px;
+        font-size: 20px;
         color: black;
         font-weight: bold;
-        padding-top: 5%;
-        padding-bottom: 10px;
-        padding-left:3%;
         padding-top: 10%;
+        padding-bottom: 7%;
+        padding-left: 2%;
     }
 
 
     .text-v1{
-        font: 15px;
+        font: 15px; 
         font-weight: bold;
         color: white;
         text-align: left;
-        padding-top:1px;
-        padding-left: 20px;
-        padding-bottom: 5px;
+        text-align: left;
+        padding-left: 7%;
     }
+
+    .text-v2{
+        font: 15px;
+        font-weight: bold;
+        color: black;
+        text-align: left;
+        padding-top:1%;
+    }
+
+    .task-s-text{
+        font: 12px;
+        font-weight: regular;
+        color: black;
+        text-align: left;
+    }
+
 
     .date-text{
         font-size: 15px;
         font-weight:normal;
         font-style: italic;
     }
+
+    .upg-c{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 150px;
+        width: 360px;
+        box-shadow: 10px 10px 30px #DCDBD0;
+        padding-left: 10%;
+    }
+
+    .upg-text-h{
+        font-size: 25px;
+        font-weight: bold;
+        padding-top: 10%;
+
+    }
+
+    .upg-text-p{
+        font-size: 15px;
+        font-weight: normal;
+
+
+    }
+
+    .upg-img{
+        padding-top: 10%;
+        padding-left: 25%;
+        width: 120px;
+        height: 110px;
+    }
+
+    .checkbox{
+        width: 20px;
+        height: 20px;
+        align-items: flex-end;
+    }
+
+    .t-cont{
+        display: flex;
+        flex-direction: column;
+        padding-left: 8%;
+        padding-bottom: 3%;
+        width: 100%;
+        gap:10px;
+    }
+
+    .st-c{  
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 400px;
+        padding-right: 1%; 
+        padding-left: 8%;
+
+    }
+
+    .center{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+
 
 
     
@@ -289,16 +447,16 @@ body {
         display: flex;
         flex-direction: column;
         gap:10px;
-        width: 50%;
+        width: 40%;
         align-items: center;
         padding-right: 3%;
     }
 
     .teams-container{
         width: 280px;
-        height: 120px;
-        border-radius: 30px;
-        background-color: #AA8FFB;
+        height: 160px;
+        border-radius: 20px;
+        background-color: #C991D0;
         padding-bottom: 10px;
     }
 
@@ -315,17 +473,18 @@ body {
         justify-content: center;
         align-content: center;
         background-color: white;
+        padding-top: 5%;
 
     }
 
     /*Color - Teams*/
 
-    .team-pink{
-        background-color: var(--team-pink);
+    .team-blue{
+        background-color: #B9D9D6;
     }
 
-    .team-yellow{
-        background-color: var(--team-yellow);
+    .team-peach{
+        background-color: #EEB48D;
     }
 
     
@@ -337,6 +496,10 @@ body {
         height: 90px;
         border-radius: 30px;
         background-color: #F8F8F8;
+        padding-top: 5%;
+        line-height: 0.1;
+        padding-left: 7%;
+        flex-wrap: wrap;
 
     }
 
@@ -346,6 +509,7 @@ body {
         justify-content: flex-start;
         gap: 5px;
         flex-wrap: wrap;
+        height: 190px;
         align-items: left;
     }
 
@@ -354,7 +518,7 @@ body {
         flex-direction: column;
         flex-wrap: wrap;
         width: 50%;
-        padding-right: 5%; 
+        padding-right: 1%; 
 
     }
 
@@ -368,13 +532,14 @@ body {
         border-style: solid;
         width: 100px;
         height: 120px;
+        box-shadow: 10px 5px 30px #DCDBD0;
 
     }
 
     .sub-text{
-        font-size: 12px;
-        padding-top: 20%;
-        padding-left: 2%;
+        font-size: 14px;
+        padding-top: 10%;
+        padding-left: 5%;
     }
 
     .add-w{
@@ -384,6 +549,7 @@ body {
         border-color: #D9D9D9;
         width: 100px;   
         height: 120px;
+        box-shadow: 10px 5px 30px #DCDBD0;
     }
 
     .cal-sec{
@@ -424,27 +590,51 @@ body {
     }
 
     .pfp{
-        width: 50px;
-        height: 50px;
+        width: 120px;
+        height: 120px;
         border-radius: 50%;
+        padding-left: 10%;
+    }
+
+    .icons-text-holder{
+        display: flex;
+        flex-direction: row;
+        gap:2px;
     }
 
     .icons-holder{
         display: flex;
         flex-direction: column;
+        padding-left: 10%;
         gap:10px;
+    }
+
+    .text-holder{
+        display: flex;
+        flex-direction: column;
+        padding-left: 10%;
+        gap:5px;
+        font-weight: bold;
+    }
+
+    .user-holder p{
+        font-size: 15px;
+        padding-left: 20%;
+        padding-bottom: 50%;
+        text-align: center;
     }
   
     /* Text Styles*/
 
 
     .day{
-        padding-top: 30px;
+        padding-top: 30%;
         font-weight: bold;
         font-size: 20px;
         padding-bottom: 10%;
         color:black;
         padding-left: 10%;
+
     }
 
     .task{
@@ -455,7 +645,7 @@ body {
     }
 
     .bottom-text{
-        font-weight: normal;
+        font-weight: bold;
         font-size: 14px;
         color:gray;
         opacity: 70%;
@@ -463,7 +653,7 @@ body {
 
     .top-text{
         font-size:12px;
-        font-weight: bold;
+        font-weight: normal;
         color:gray;
     }
 
@@ -473,6 +663,15 @@ body {
         color: #D9D9D9;
         align-content: center;
         padding-left: 15%;
+    }
+
+    .teams-s-text{
+        padding-left: 10%;
+        font-size: 11px;
+        padding-top: 6%;
+        font-weight: bold;
+        color: white;
+
     }
 
     .nav-text{
@@ -499,6 +698,12 @@ body {
         justify-content: center;
     }
 
+    .sidebar-text{
+        font-size: 12px;
+        font-weight: bold;
+        padding-left: 5%;
+    }
+
     .head-text{
         font-size: 25px;
         color: black;
@@ -510,21 +715,29 @@ body {
 
 
     .text-v1{
-        font: 15px;
+        font-size: 20px;
+        text-wrap: wrap;
         font-weight: bold;
         color: white;
         text-align: left;
-        padding-top:1%;
-        padding-left: 3%;
+        padding-left: 8%;
+        padding-top: 15%;
     }
 
     .text-v2{
         font: 15px;
-        font-weight: regular;
+        font-weight: bold;
         color: black;
         text-align: left;
         padding-top:1%;
-        padding-left: 3%;
+    }
+
+    .task-s-text{
+        font: 12px;
+        font-weight: regular;
+        color: black;
+        text-align: left;
+        
     }
 
     .date-text{
@@ -535,6 +748,42 @@ body {
         padding-bottom: 3%;
     }
 
+    .upg-c{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 150px;
+        width: 360px;
+        box-shadow: 10px 10px 30px #DCDBD0;
+        padding-left: 10%;
+    }
+
+    .upg-text-h{
+        font-size: 25px;
+        font-weight: bold;
+        padding-top: 10%;
+
+    }
+
+    .upg-text-p{
+        font-size: 15px;
+        font-weight: normal;
+
+
+    }
+
+    .upg-img{
+        padding-top: 10%;
+        padding-left: 25%;
+        width: 120px;
+        height: 110px;
+    }
+
+    .checkbox{
+        width: 20px;
+        height: 20px;
+        align-items: flex-end;
+    }
     
 } 
 

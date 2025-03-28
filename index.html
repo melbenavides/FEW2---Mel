@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Chaart</title>
 </head>
 <body>
     <div class="sidebar-dash">
             <div class="user-holder">
-                <a><img class="pfp" src="img/pfp.jpg"></a>
+                <a><img class="pfp" src="img/pfp.png"></a>
+                <p>Sarah Connor <br> sarahc@gmail.com</p>
             </div>
-            <div class="icons-holder">
-                <a><img class="icons" src="img/home.png" alt="Home">Dashboards</a>
-                <a><img class="icons" src="img/dashboard.png" alt="Dashboard">Analytics</a>
-                <a><img class="icons" src="img/list.png" alt="List">Task List</a>
-                <a><img class="icons" src="img/tracking.png" alt="Tracking">Tracking</a>
-                <a><img class="icons" src="img/settings.png" alt="Settings">Settings</a>
+            <div class="icons-text-holder">
+                <div class="icons-holder">
+                    <img class="icons" src="img/home.png" alt="Home">
+                    <img class="icons" src="img/dashboard.png" alt="Dashboard">
+                    <img class="icons" src="img/list.png" alt="List">
+                    <img class="icons" src="img/tracking.png" alt="Tracking">
+                    <img class="icons" src="img/settings.png" alt="Settings">
+                </div>
+                <div class="text-holder">
+                    <p>Dashboard</p>
+                    <p>Analytics</p>
+                    <p>Task Lists</p>
+                    <p>Tracking</p>
+                    <p>Settings</p>
+                </div>
+
             </div>
         </div>
     <div class="center">
@@ -28,19 +40,30 @@
             </div>
                <div class="main-container">
             <div class="t-cont">
-                <div class="teams-container text-v1">
-                    <p>
-                        Web Development
+                <div class="teams-container">
+                    <p class="text-v1">
+                        Web <br> Development
                     </p>
+                </p>
+                <p class="teams-s-text">
+                    10 Tasks | 96%
+                </p>
                  </div>
-                 <div class="teams-container team-pink text-v1">
-                    <p>
-                        UX/UI Design
+                 <div class="teams-container team-blue">
+                    <p class="text-v1">
+                        Mobile App <br> Design
                     </p>
+                </p>
+                <p class="teams-s-text">
+                    12 Tasks | 46%
+                </p>
                  </div>
-                 <div class="teams-container team-yellow text-v1">
-                    <p>
-                        Facebook Brand UI Kit
+                 <div class="teams-container team-peach">
+                    <p class="text-v1">
+                        Facebook <br> Brand UI Kit
+                    </p>
+                    <p class="teams-s-text">
+                        22 Tasks | 73%
                     </p>
                  </div> 
              </div>
@@ -49,21 +72,33 @@
         <div class="sub">
                 <div class="tasks-c">
                     <div class="head-text">Tasks for today</div>
-                    <div class="tasks-container text-v2">
-                        <p>
-                            Task 1 <br> Research
+                    <div class="tasks-container">
+                        <p class="text-v2">
+                            Mobile App
+                            <p class="task-s-text">
+                                Prepare Figma file
+                            </p>
                         </p>
+                        <img src="img/checkbox.png" class="checkbox">
                     </div>
-                    <div class="tasks-container text-v2">
-                        <p>
-                            Task 2 <br> Research
+                    <div class="tasks-container">
+                        <p class="text-v2">
+                            UX Wireframes
+                            <p class="task-s-text">
+                                Design Wireframes
+                            </p> 
                         </p>
+                        <img src="img/checkbox.png" class="checkbox">
+                    </div>
+                    <div class="tasks-container">
+                        <p class="text-v2">
+                            Mobile App
+                            <p class="task-s-text">
+                                Research for mobile
+                            </p>
+                        </p>
+                        <img src="img/checkbox.png" class="checkbox">
 
-                    </div>
-                    <div class="tasks-container text-v2">
-                        <p>
-                            Task 3 <br> Research
-                        </p>
                     </div>
                 </div>
                 <div class="st-c">
@@ -73,24 +108,30 @@
                             <p class="stat-text">
                                 28hr
                             </p>
-                             <p class="sub-text">Tracked time</p>   
+                             <p class="sub-text">Tracked <br> time</p>   
                         </div>
                         <div class="st-1">
                             <p class="stat-text">
                                 17
                             </p>
-                            <p class="sub-text">Finished tasks</p>
+                            <p class="sub-text">Finished <br> tasks</p>
                         </div>
                         <div class="add-w">
                             <div class="add-w-text">
                                 <p>
-                                    + add <br> widget
+                                    + add widget
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="upg-c">
-                        holis
+                        <div class="upg-text-h">
+                            $9.99 p/m
+                            <div class="upg-text-p">
+                                More productivity <br> with Premium!
+                            </div>
+                        </div>
+                        <img class="upg-img" src="img/teamwork.jpg">
                     </div>
                 </div>
         </div>
@@ -101,31 +142,27 @@
             <div class="day">
                Calendar
                 <div class="task">
-                    <div class="top-text"> Monday 10:00</div>
-                    Finish research.
+                    <div class="top-text">Dribbble Shot</div>
                     <div class="bottom-text">
-                        Research about...
+                       Facebook Brand
                     </div>
                 </div>
                 <div class="task">
-                    <div class="top-text">Tuesday 10:00</div>
-                    Finish research.
+                    <div class="top-text">Design</div>
                     <div class="bottom-text">
-                        Research about...
+                        Task Management
                     </div>
                 </div>
                 <div class="task">
-                    <div class="top-text"> Wednesday 10:00</div>
-                    Finish research.
+                    <div class="top-text">UX Research</div>
                     <div class="bottom-text">
-                        Research about...
+                        Sleep App
                     </div>
                 </div>
                 <div class="task">
-                    <div class="top-text"> Thursday 10:00</div>
-                    Finish research.
+                    <div class="top-text">Design</div>
                     <div class="bottom-text">
-                        Research about...
+                       Task Management
                     </div>
                 </div>
             </div>
